@@ -81,13 +81,23 @@ body {
     font-size: 20px;
     color: #797979;
 }
-@media (min-width: 768px) {
+@media (max-width: 576px)  {
+    .special-heading {
+        font-size: 55px;
+    }
+    .special-heading + p {
+        font-size: 15px;
+        margin-top: -20;
+    }
+}
+@media (min-width: 577px) , (min-width: 768px) {
     .special-heading {
         font-size: 60px;
     }
     .special-heading + p {
         margin-top: -20;
     }
+
 }
 /* end component  */
 /* start of header  */
